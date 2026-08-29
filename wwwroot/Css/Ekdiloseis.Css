@@ -1,0 +1,508 @@
+/* ==========================================
+   1. CUSTOM PROPERTIES (VARIABLES)
+   ========================================== */
+:root {
+  --white-color:                 #ffffff;
+  --primary-color:               #81B29A;
+  --secondary-color:             #3D405B;
+  --section-bg-color:            #F4F1DE;
+  --custom-btn-bg-color:         #F2CC8F;
+  --custom-btn-bg-hover-color:   #E07A5F;
+  --dark-color:                  #000000;
+  --p-color:                     #717275;
+  --link-hover-color:            #F2CC8F;
+
+  --body-font-family:            'DM Sans', sans-serif;
+
+  --h1-font-size:                42px;
+  --h2-font-size:                36px;
+  --h3-font-size:                28px;
+  --h4-font-size:                24px;
+  --h5-font-size:                22px;
+  --h6-font-size:                20px;
+  --p-font-size:                 18px;
+  --menu-font-size:              16px;
+  --btn-font-size:               14px;
+  --copyright-font-size:         13px;
+
+  --border-radius-large:         100px;
+  --border-radius-medium:        20px;
+  --border-radius-small:         10px;
+
+  --font-weight-normal:          400;
+  --font-weight-medium:          500;
+  --font-weight-bold:            700;
+}
+
+/* ==========================================
+   2. ΒΑΣΙΚΗ ΔΙΑΤΑΞΗ (LAYOUT & STICKY FOOTER)
+   ========================================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--body-font-family);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Το main παίρνει όλο τον διαθέσιμο χώρο και σπρώχνει το footer κάτω */
+main, .main-content {
+    flex: 1 0 auto;
+    padding-top: 100px; /* Κενό για να μην κρύβεται το περιεχόμενο κάτω από το fixed menu */
+    padding-bottom: 40px;
+}
+
+a, button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+}
+
+/* ==========================================
+   3. NAVIGATION BAR & OFFCANVAS
+   ========================================== */
+.offcanvas {
+  background-color: var(--primary-color);
+  padding: 30px;
+}
+
+.offcanvas.offcanvas-end { border-left: 0; }
+.offcanvas-header .btn-close { transition: all 0.3s; }
+.offcanvas-header .btn-close:hover { transform: rotate(180deg); }
+
+.offcanvas svg {
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+}
+
+.sticky-wrapper {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  z-index: 100;
+}
+
+.sticky-wrapper.is-sticky .navbar {
+  background-color: var(--secondary-color);
+}
+
+.navbar {
+  background-color: var(--secondary-color); /* Σταθερό υπόβαθρο για τις εσωτερικές σελίδες */
+  z-index: 99;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar .container, 
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-bold);
+  display: block;
+  color: var(--white-color) !important;
+  max-width: 48px;
+}
+
+.navbar-brand-image {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-brand-icon::after {
+  top: 5px;
+}
+
+.navbar-brand-text {
+  line-height: normal;
+  margin-left: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+.navbar-brand-text small {
+  display: block;
+  font-size: 17px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  border-radius: var(--border-radius-large);
+  margin: 5px;
+  padding: 5px;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  color: var(--white-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.navbar .dropdown-menu {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  border: 0;
+  display: inherit;
+  opacity: 0;
+  min-width: 9rem;
+  margin-top: 20px;
+  padding: 13px 0 10px 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.navbar .dropdown-menu::before {
+  content: "";
+  width: 0; height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid var(--white-color);
+  position: absolute;
+  top: -10px; left: 10px;
+}
+
+.navbar .dropdown-item {
+  display: inline-block;
+  color: var(--p-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+}
+
+.navbar .dropdown-item.active, 
+.navbar .dropdown-item:active,
+.navbar .dropdown-item:focus, 
+.navbar .dropdown-item:hover {
+  background: transparent;
+  color: var(--link-hover-color);
+}
+
+.navbar .dropdown-toggle::after {
+  content: "\f282";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-size: var(--copyright-font-size);
+  font-style: normal;
+  font-weight: normal !important;
+  line-height: 1;
+  vertical-align: -.125em;
+  position: relative;
+  left: 2px;
+  border: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    margin-top: 0;
+    pointer-events: auto;
+  }
+}
+
+.navbar-toggler {
+  border: 0; padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 30px; height: 35px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: var(--white-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px; height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before,
+.navbar-toggler .navbar-toggler-icon:after {
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  position: absolute;
+  right: 0; left: 0;
+  background: var(--white-color);
+  width: 30px; height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before { top: -8px; }
+.navbar-toggler .navbar-toggler-icon::after { top: 8px; }
+
+/* ==========================================
+   4. SITE FOOTER
+   ========================================== */
+.site-footer {
+  position: relative;
+  background-color: var(--secondary-color);
+  color: var(--section-bg-color);
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin-top: auto; /* Εμποδίζει το ανεβάσμα του footer αν το main είναι μικρό */
+  flex-shrink: 0;
+}
+
+.site-footer .container {
+  position: relative;
+  z-index: 2;
+}
+
+.site-footer svg {
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+  pointer-events: none;
+}
+
+.footer-title {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 35px; height: 2px;
+  background-color: var(--primary-color);
+}
+
+.footer-text, .footer-email, .footer-links a {
+  color: #cfd8dc;
+  font-size: 14px;
+}
+
+.footer-text { line-height: 1.6; }
+.footer-email:hover, .footer-links a:hover { color: var(--primary-color); }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a:hover { padding-left: 5px; }
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: translateY(-3px);
+}
+
+.footer-divider { border-color: rgba(255, 255, 255, 0.1); }
+.copyright-text {
+  color: #90a4ae;
+  font-size: var(--copyright-font-size);
+}
+
+/* ==========================================
+   5. RESPONSIVE FOR NAV & FOOTER
+   ========================================== */
+@media screen and (max-width: 991px) {
+  .navbar { background-color: var(--secondary-color); }
+
+  .navbar-nav .dropdown-menu {
+    position: relative;
+    left: 10px;
+    opacity: 1;
+    pointer-events: auto;
+    max-width: 155px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    padding-top: 15px;
+    padding-bottom: 100px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 5px;
+    padding: 0;
+  }
+
+  .site-footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+
+/* ==========================================
+   EVENT DETAIL ARTICLE STYLES (WIDER & SMALLER IMG)
+   ========================================== */
+.event-detail-article {
+    max-width: 1100px; /* Πιο πλατύ πλαίσιο περιεχομένου */
+    margin: 0 auto;
+    background: var(--white-color);
+    padding: 40px 50px;
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Header & Meta */
+.event-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: var(--font-weight-bold);
+    padding: 6px 16px;
+    border-radius: var(--border-radius-large);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.event-title {
+    color: var(--secondary-color);
+    font-size: var(--h1-font-size);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.event-meta-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: var(--p-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.event-meta-info span i {
+    color: var(--custom-btn-bg-hover-color);
+    margin-right: 6px;
+}
+
+/* Μικρότερη Αφίσα Εκδήλωσης */
+.event-poster-wrapper {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.event-poster {
+    max-width: 450px; /* Περιορισμός μεγέθους της εικόνας */
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Κείμενο Άρθρου */
+.event-body {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    line-height: 1.8;
+}
+
+.event-body .lead {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+}
+
+.event-body h3 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: var(--h3-font-size);
+}
+
+.event-body ul {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.event-body li {
+    margin-bottom: 10px;
+}
+
+.event-body blockquote {
+    background-color: var(--section-bg-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: var(--secondary-color);
+    border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+}
+
+.event-actions {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .event-detail-article {
+        padding: 20px;
+    }
+    .event-poster {
+        max-width: 100%; /* Στα κινητά πιάνει όλο το διαθέσιμο πλάτος */
+    }
+    .event-title {
+        font-size: 28px;
+    }
+    .event-meta-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

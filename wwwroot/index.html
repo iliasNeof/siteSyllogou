@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Η επίσημη ιστοσελίδα του Εκπολιτιστικού Συλλόγου  Νεολαίας Λυχνού Φθιώτιδας. Δείτε το ψηφιακό μας αρχείο, εκδηλώσεις και φωτογραφίες και άλλα πολλα σχετικά με το χωριό μας και το Σύλλογο.">
+    <meta name="author" content="">
+
+    <title>Σύλλογος Νεολαίας Λυχνού Φθιώτιδας</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="Css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="Css/MainStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/emvlima_sillogou.svg" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                    <span class="navbar-brand-text">
+                        <small>ΠΟΛΙΤΙΣΜΙΚΟΣ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ </small>
+                        <small>ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΑΣ</small>
+                    </span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-3">
+                    <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">Member Login</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Αρχική</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Σχετικά με εμάς</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Το χωρίο μας</a>
+                        </li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="eventsDropdown">
+									Εκδηλώσεις - Δράσεις
+								</a>
+
+								<ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+									<li>
+										<a class="dropdown-item click-scroll" href="#section_4.1">
+											Προσεχείς Εκδηλώσεις
+										</a>
+									</li>
+
+									<li>
+										<a class="dropdown-item click-scroll" href="/wwwroot/Pages/arxeio.html">
+											Αρχείο Εκδηλώσεων
+										</a>
+									</li>
+								</ul>
+							</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com/groups/146857978735724/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/to_lyxno?igsi=emdoNjBleWFyMGQ5 "
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:syllogos.tolyxnari@yahoo.com" aria-label="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-none d-lg-block ms-lg-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample">Ενίσχυση Συλλόγου</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    
+	<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+		id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+				Οικονομική Ενίσχυση Συλλόγου
+			</h5>
+
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+				aria-label="Κλείσιμο"></button>
+		</div>
+
+		<div class="offcanvas-body d-flex flex-column">
+
+			<div class="member-login-form-body">
+
+				<p class="mb-4">
+					Ο Σύλλογός μας είναι <strong>μη κερδοσκοπικός</strong>
+					και λειτουργεί με σκοπό την υποστήριξη και την ανάπτυξη
+					του χωριού μας.
+				</p>
+
+				<p class="mb-4">
+					Όποιος επιθυμεί μπορεί να στηρίξει εθελοντικά το έργο,
+					τις δράσεις και τις εκδηλώσεις του Συλλόγου μας.
+				</p>
+
+
+				<div class="support-info mb-4">
+
+					<h6 class="mb-3">
+						<i class="bi bi-bank me-2"></i>
+						Τραπεζική Κατάθεση
+					</h6>
+
+					<p class="mb-2">
+						<strong>Δικαιούχος:</strong><br>
+						ΠΟΛΙΤΙΣΜΙΚΟΣ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΑΣ
+					</p>
+
+					<p class="mb-2">
+						<strong>IBAN:</strong><br>
+						<span id="ibanNumber">
+							GRXXXXXXXXXXXXXXX
+						</span>
+						 <button type="button"
+								class="btn btn-sm btn-outline-light ms-2"
+								onclick="copyToClipboard('ibanNumber', this)">
+								<i class="bi bi-copy"></i>
+						</button>
+					</p>
+
+				</div>
+
+				<div class="support-info mb-4">
+
+					<h6 class="mb-3">
+						<i class="bi bi-phone me-2"></i>
+						Ενίσχυση μέσω IRIS
+					</h6>
+
+					<p class="mb-3">
+						Μπορείτε επίσης να πραγματοποιήσετε την
+						ενίσχυσή σας μέσω <strong>IRIS</strong>.
+					</p>
+
+					<p class="mb-0">
+						<strong>ΑΦΜ:</strong><br>
+
+						<span id="irisNumber">
+							997501653
+						</span>
+
+						<button type="button"
+								class="btn btn-sm btn-outline-light ms-2"
+								onclick="copyToClipboard('irisNumber', this)"
+								aria-label="Αντιγραφή ΑΦΜ">
+							<i class="bi bi-copy"></i>
+						</button>
+					</p>
+
+				</div>
+
+
+				<div class="text-center mt-3">
+
+					<p class="small">
+						Σας ευχαριστούμε θερμά για κάθε στήριξη
+						που συμβάλλει στη συνέχιση του έργου
+						και των δράσεών μας.
+					</p>
+
+				</div>
+
+			</div>
+
+
+			<div class="mt-auto pt-4">
+
+			<p class="small mb-0">
+				Για οποιαδήποτε πληροφορία σχετικά με την
+				οικονομική ενίσχυση, μπορείτε να επικοινωνήσετε
+				μαζί μας στο 
+				<a href="mailto:syllogos.tolyxnari@yahoo.com" 
+				class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+				syllogos.tolyxnari@yahoo.com
+				</a>.
+			</p>
+
+			
+			</div>
+
+	</div>
+
+			</div>
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+            <div class="section-overlay"></div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#3D405B" fill-opacity="1"
+                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+                </path>
+            </svg>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <h2 class="text-white">Καλώς ήρθατε στην ιστοσελίδα του Συλλόγου μας</h2>
+
+                        <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                            <span>Το Λυχνό είναι</span>
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">Πανέμορφο</b>
+                                <b>Ορεινό</b>
+                                <b>Ιδανικό για ξεκούραση...</b>
+                            </span>
+                        </h1>
+
+                        <div class="custom-btn-group">
+                            <a href="#section_3" class="btn custom-btn smoothscroll me-3">H ιστορία του τόπου μας</a>
+
+                            <a href="#section_4.2" class="link smoothscroll">Γίνε και εσύ μέλος</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-lg-5 mb-4">Ο Σύλλογος μας</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                        <h3 class="mb-3">Πολιτιαμικός και Πνευματικός Σύλλογος Νεολάιας Λυχνού Φθιώτιδας</h3>
+
+                        <p> <strong>ΕΤΟΣ ΙΔΡΥΣΕΩΣ : 2012</strong> </p>
+
+                        <p>Με την υπ’αριθμ.72/2012 απόφαση του Μονομελούς Πρωτοδικείου Λαμίας αναγνωρίσθηκε η ίδρυση του
+                            μη κερδοσκοπικού Συλλόγου με
+                            την επωνυμία «ΠΟΛΙΤΙΣΜΙΚΟΣ & ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΟΣ», που εδρεύει
+                            στη Λαμία και εγκρίθηκε το από
+                            25-09-2011 καταστατικό του, αποτελούμενο από είκοσι έξι(26) άρθρα και σκοπούς τους
+                            αναφερόμενους στο άρθρο δύο (2) αυτού ,
+                            ήτοι την προώθηση και ανύψωση του πολιτισμικού και πνευματικού επιπέδου της ευρύτερης
+                            περιοχής του Λυχνού Φθιώτιδος, την
+                            προβολή της περιοχής μέσω εκδηλώσεων και ενεργειών που προβάλλουν το αισθητικό, πολιτισμικό
+                            τοπίο και σηματοδοτούν τις
+                            παραδοσιακές αξίες και έθιμα του τόπου. Συγχρόνως την ανάπτυξη υγιών πρωτοβουλιών από τους
+                            νέους της περιοχής για την
+                            υπεράσπιση κοινωνικών και δημοκρατικών θεσμών και για την οικολογική παρέμβαση, την
+                            ερευνητική δραστηριότητα και την
+                            διατήρηση και αναβάθμιση μέσω ψυχαγωγικών και πνευματικών εκδηλώσεων των δεσμών μεταξύ των
+                            κατοίκων της περιοχής..</p>
+
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <div class="member-block">
+                            <div class="member-block-image-wrap">
+                                <img src="images/emvlima_sillogou.svg" class="member-block-image img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+                <section class="section-bg-image">
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                    </div>
+
+                </div>
+            </div>
+
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+        </section>
+
+        <section class="about-section section-padding" id="section_3">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-12 col-12 text-center">
+                <h2 class="mb-lg-5 mb-4">Το χωριό μας</h2>
+            </div>
+
+            <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                <h3 class="mb-3">Λυχνό Φθιώτιδας</h3>
+                <p>Το Λυχνό είναι κτισμένο στις βορειοδυτικές πλαγιές της Οίτης σε υψόμετρο 660 μέτρα, ανάμεσα
+                    στα έλατα και τα κωνοφόρα δέντρα. Το χωριό απέχει 33 χιλιόμετρα Δ.-ΝΔ. από τη Λαμία (μέσω Λουτρών Υπάτης), 9 χιλιόμ.
+                    Δ.-ΝΔ. από την Υπάτη και περίπου 2 χιλιόμ. ΝΔ. από την Ιερά Μονή Αγάθωνος (14ου με 15ου αιώνα.) με την οποία
+                    συνδέεται η ιστορία του οικισμού.
+                    Έχει ήπιο κλίμα και αποτελεί παραθεριστικό θέρετρο της περιοχής. Στην τοποθεσία «Βρύσες» υπάρχει πλάτανος άνω των
+                    600 ετών. Ο αριθμός των μονίμων κατοίκων είναι μικρός, ιδίως τους χειμερινούς μήνες.
+                    Εκδηλώσεις γίνονται στην Ιερά Μονή Αγάθωνος και στον Λύχνο στις 5-6 Αυγούστου. Ενοριακός ναός του χωριού είναι ο Άγιος Γεώργιος.
+                    Μετά την απελευθέρωση, αναφέρεται επίσημα το 1835 ως Λύχνο να προσαρτάται στον τότε Δήμο Υπάτης. Το 1912 με το ΦΕΚ 261Α -
+                    31/08/1912 ορίστηκε έδρα της ομώνυμης νεοϊδρυθείσας κοινότητας. Σύμφωνα με το Πρόγραμμα «Καλλικράτης» μαζί με την
+                    Ιερά Μονή Αγάθωνος και τα Αλώνια αποτελούν την τοπική κοινότητα Λυχνού που υπάγεται στη δημοτική ενότητα Υπάτης του
+                    Δήμου Λαμιέων και σύμφωνα με την απογραφή του 2011 έχει πληθυσμό 142 κατοίκους.</p>
+            </div>
+
+            <div class="col-lg-5 col-12 ms-auto">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.623468350888!2d22.195922511725545!3d38.86397519855742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135f3f2c3e58e251%3A0xead5d98b1d0ce66f!2zzpvPjc-Hzr3OvyAzNTAgMTY!5e0!3m2!1sel!2sgr!4v1787309382941!5m2!1sel!2sgr"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section class="section-bg-image">
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+        </section>
+
+
+
+
+  <section class="events-section section-bg section-padding" id="section_4.1">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-12 col-12">
+							<h2 class="mb-lg-3">Προσεχείς εκδηλώσεις</h2>
+						</div>
+
+						<div class="row custom-block mb-3">
+							<div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+								<div
+									class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+									<h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">12</h6>
+
+									<strong class="text-white">Αυγ 2026</strong>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+								<div class="custom-block-image-wrap">
+									<a href="/wwwroot/Pages/glenti.html">
+										<img src="images/glenti.jpg" class="custom-block-image img-fluid"
+											alt="">
+
+										<i class="custom-block-icon bi-link"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-12 order-3 order-lg-0">
+								<div class="custom-block-info mt-2 mt-lg-0">
+									<a href="/wwwroot/Pages/glenti.html" class="events-title mb-3">3ο Παραδοσιακό Γλέντι στο Λυχνό</a>
+
+									<p class="mb-0">Σας περιμένουμε όλους στο παραδοσιακό μας γλέντι!!
+									Παρακαλούμε για την καλύτερη εξυπηρέτηση σας κάντε έγκαιρα τις κρατήσεις σας στο τηλέφωνο:6983382762.   
+								</p>
+
+									<div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+										<div class="mb-4 mb-lg-0">
+											<div class="d-flex flex-wrap align-items-center mb-1">
+												<span class="custom-block-span">Ώρα:</span>
+
+												<p class="mb-0">21:30</p>
+											</div>
+
+											<div class="d-flex flex-wrap align-items-center">
+												<span class="custom-block-span">Είσοδος:</span>
+
+												<p class="mb-0">Ελέυθερη</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row custom-block custom-block-bg">
+							<div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+								<div
+									class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+									<h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">9</h6>
+
+									<strong class="text-white">Αυγ 2026</strong>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+								<div class="custom-block-image-wrap">
+									<a href="/wwwroot/Pages/party.html">
+										<img src="images/party.jpg"
+											class="custom-block-image img-fluid" alt="">
+
+										<i class="custom-block-icon bi-link"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-12 order-3 order-lg-0">
+								<div class="custom-block-info mt-2 mt-lg-0">
+									<a href="/wwwroot/Pages/party.html" class="events-title mb-3">Casino Party</a>
+
+									<p class="mb-0">Φέτος παίζουμε το πιο δυνατό μας χαρτί την Κυριακή 9 Αυγούστου στο Πάρτι Νεολαίας. 
+													Μην ρισκάρεις να λείπεις!</p>
+
+									<div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+										<div class="mb-4 mb-lg-0">
+											<div class="d-flex flex-wrap align-items-center mb-1">
+												<span class="custom-block-span">Ώρα:</span>
+
+												<p class="mb-0">23:30</p>
+											</div>
+
+											<div class="d-flex flex-wrap align-items-center">
+												<span class="custom-block-span">Είσοδος:</span>
+
+												<p class="mb-0">Ελέυθερη</p>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+  <section class="contact-section section-padding" id="section_4.2">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-5 col-12">
+						<form action="https://formsubmit.co/syllogos.tolyxnari@yahoo.com" method="POST">
+							
+
+							<input type="hidden" name="_subject" value="Νέα εγγραφή από την ιστοσελίδα!">
+							<input type="hidden" name="_captcha" value="false"> <!-- Απενεργοποιεί το captcha αν θέλεις -->
+
+							<p class="fs-6 text-muted mb-4">
+								Συμπληρώστε εδώ τα στοιχεία σας και σύντομα θα επικοινωνήσουμε μαζί σας για να προχωρήσουμε στην εγγραφή σας.
+							</p>
+
+							<div class="row g-3">
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-floating mb-3">
+										<input type="text" name="Ονοματεπώνυμο" id="full-name" class="form-control" placeholder="Full Name" required>
+										<label for="full-name">Ονοματεπώνυμο</label>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-12">
+									<div class="form-floating mb-3">
+										<input type="email" name="Email" id="email" class="form-control" placeholder="Email" required>
+										<label for="email">Email Επικοινωνίας</label>
+									</div>
+								</div>
+							</div>
+
+							<button type="submit" class="btn custom-btn mt-3">Υποβολή Εγγραφής</button>
+						</form>
+						</div>
+
+					   
+					</div>
+				</div>
+  </section>
+    </main>
+
+<footer class="site-footer">
+		<div class="container">
+			<div class="row gy-4">
+
+				<!-- Στήλη 1: Πληροφορίες Συλλόγου -->
+				<div class="col-lg-5 col-md-6 col-12">
+					<h5 class="footer-title mb-3">Π.Π.Σ. Νεολαίας Λυχνού</h5>
+					<p class="footer-text">
+						Πολιτισμικός και Πνευματικός Σύλλογος Νεολαίας Λυχνού Φθιώτιδας. 
+						Διατηρούμε την παράδοση, την ιστορία και την πολιτιστική κληρονομιά του τόπου μας.
+					</p>
+				</div>
+
+				<!-- Στήλη 2: Γρήγοροι Σύνδεσμοι -->
+				<div class="col-lg-3 col-md-6 col-12 ms-auto">
+					<h5 class="footer-title mb-3">Πλοήγηση</h5>
+					<ul class="footer-links list-unstyled">
+						<li><a href="#section_1">Αρχική</a></li>
+						<li><a href="#section_2">Σχετικά με εμάς</a></li>
+						<li><a href="#section_3">Το χωριό μας</a></li>
+						<li><a href="#section_4">Εκδηλώσεις - Δράσεις</a></li>
+					</ul>
+				</div>
+
+				<!-- Στήλη 3: Επικοινωνία & Social -->
+				<div class="col-lg-3 col-md-6 col-12">
+					<h5 class="footer-title mb-3">Επικοινωνία</h5>
+					<p class="footer-text mb-2">
+						<i class="bi bi-geo-alt-fill me-2"></i>Λυχνό Φθιώτιδας, 35016
+					</p>
+					<p class="footer-text mb-3">
+						<i class="bi bi-envelope-fill me-2"></i>
+						<a href="mailto:syllogos.tolyxnari@yahoo.com" class="footer-email">syllogos.tolyxnari@yahoo.com</a>
+					</p>
+
+					<!-- Social Media Icons -->
+					<div class="footer-social d-flex gap-3">
+						<a href="https://facebook.com/groups/146857978735724/" target="_blank" rel="noopener" aria-label="Facebook">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/to_lyxno" target="_blank" rel="noopener" aria-label="Instagram">
+							<i class="bi bi-instagram"></i>
+						</a>
+						<a href="mailto:syllogos.tolyxnari@yahoo.com" aria-label="Email">
+							<i class="bi bi-envelope-fill"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+			<hr class="footer-divider my-4">
+
+			<!-- Copyrights Τέρμα Κάτω -->
+			<div class="row align-items-center">
+				<div class="col-12 text-center">
+					<p class="copyright-text mb-0">
+						Copyright © 2026 Π.Π.Σ. Νεολαίας Λυχνού Φθιώτιδας. Με την επιφύλαξη παντός νόμιμου δικαιώματος.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>   
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/custom.js"></script>
+     <script src="Js/Index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Αρχείο Δραστηριοτήτων - Πολιτιστικός Σύλλογος</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="/wwwroot/Css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="/wwwroot/Css/Ekdiloseis.Css" rel="stylesheet">
+    
+    <!-- CSS Αρχείου Δραστηριοτήτων -->
+    <link rel="stylesheet" href="/wwwroot/Css/Arxeio.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVBAR (Ακριβώς το κοινό σου Navbar)
+         ========================================== -->
+      <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/wwwroot/index.html">
+                    <img src="/wwwroot/images/emvlima_sillogou.svg" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                    <span class="navbar-brand-text">
+                        <small>ΠΟΛΙΤΙΣΜΙΚΟΣ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ </small>
+                        <small>ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΑΣ</small>
+                    </span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-3">
+                    <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">Member Login</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/wwwroot/index.html#section_1">Αρχική</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/wwwroot/index.html#section_2">Σχετικά με εμάς</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="/wwwroot/index.html#section_3">Το χωρίο μας</a>
+                        </li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="eventsDropdown">
+									Εκδηλώσεις - Δράσεις
+								</a>
+
+								<ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+									<li>
+										<a class="dropdown-item click-scroll" href="/wwwroot/index.html#section_4.1">
+											Προσεχείς Εκδηλώσεις
+										</a>
+									</li>
+
+									<li>
+										<a class="dropdown-item click-scroll" href="/wwwroot/index.html#section_4.2">
+											Αρχείο Εκδηλώσεων
+										</a>
+									</li>
+								</ul>
+							</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com/groups/146857978735724/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/to_lyxno?igsi=emdoNjBleWFyMGQ5 "
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:syllogos.tolyxnari@yahoo.com" aria-label="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+    <!-- ==========================================
+         MAIN CONTENT - ΑΡΧΕΙΟ ΔΡΑΣΤΗΡΙΟΤΗΤΩΝ
+         ========================================== -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Τίτλος Σελίδας -->
+            <header class="archive-header text-center">
+                <h1 class="archive-main-title">Αρχείο Δραστηριοτήτων</h1>
+                <p class="archive-subtitle">Ανατρέξτε στις σημαντικότερες στιγμές, εκδηλώσεις και δράσεις του Συλλόγου μας.</p>
+            </header>
+
+            <!-- Φίλτρα Κατηγοριών -->
+            <div class="archive-filters">
+                <button class="filter-btn active" onclick="filterArchive('all', this)">Όλα</button>
+                <button class="filter-btn" onclick="filterArchive('photos', this)"><i class="bi bi-images"></i> Φωτογραφίες</button>
+                <button class="filter-btn" onclick="filterArchive('videos', this)"><i class="bi bi-play-btn"></i> Βίντεο</button>
+            </div>
+
+            <!-- Grid Δραστηριοτήτων -->
+            <div class="archive-grid">
+
+            
+                 <!-- 3ο Γλέντι 2026 -->
+<div class="archive-card archive-item photos">
+    
+    <div class="full-mini-gallery">
+        <a href="/wwwroot/images/3o_glenti/foto_1_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_1_thumb.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_2_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_2_thumb.webp" alt="Φωτογραφία 2" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_3_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_3_thumb.webp" alt="Φωτογραφία 3" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_4_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_4_thumb.webp" alt="Φωτογραφία 4" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_5_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_5_thumb.webp" alt="Φωτογραφία 5" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_6_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_6_thumb.webp" alt="Φωτογραφία 6" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_7_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_7_thumb.webp" alt="Φωτογραφία 7" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_8_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_8_thump.webp" alt="Φωτογραφία 8" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_9_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_9_thump.webp" alt="Φωτογραφία 9" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_10_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_10_thump.webp" alt="Φωτογραφία 10" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_11_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_11_thump.webp" alt="Φωτογραφία 11" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_12_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_12_thump.webp" alt="Φωτογραφία 12" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_13_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_13_thump.webp" alt="Φωτογραφία 13" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_14_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_14_thump.webp" alt="Φωτογραφία 14" loading="lazy"></a>
+        <a href="/wwwroot/images/3o_glenti/foto_15_large.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/3o_glenti/foto_15_thump.webp" alt="Φωτογραφία 15" loading="lazy"></a>
+
+    </div>
+
+    <div class="archive-card-body">
+        <span class="badge-type photo-badge"><i class="bi bi-images"></i> Φωτογραφίες</span>
+        <h3 class="archive-card-title">3ο Παραδοσιακό Γλέντι</h3>
+        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 12 Αυγούστου 2026</p>
+        <p class="archive-card-text">Για 3η συνεχόμενη χρονιά πραγματοποιήθηκε στο Λυχνό το καθιερωμένο πλέον γλέντι του Συλλόγου μας .
+            Ευχαριστούμε θερμά όλους όσου μας τίμησαν με την παρουσία τους σε αυτή την όμορφη παραδοσιακή βραδιά στην πλατεία του χωρίου μας.
+            Τα χορευτικά του Συλλόγου μας καλωσόρισαν τους παρευρισκομένους και στην συνέχεια το γλέντι συνεχίστηκε με ζωντανή παταδοσιακή μουσική μέχρι 
+            πρωίας.
+        </p>
+        
+        <a href="https://drive.google.com/drive/folders/1QODnIyIoxNzr62-0H9gNO_wPhMRzGYnW?fbclid=PAcGRvZgRleHRuA2FlbQMxMDAAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnvRsWp6n8KOh8mHbRMy8odNnbSwm8At048s0dr3NjH8qfeKPkIvCh2Mo-NaI_aem__qcDIag2uMwLSlsZInaatQ?usp=sharing" 
+           target="_blank" 
+           rel="noopener" 
+           class="drive-gallery-btn">
+            <i class="bi bi-google"></i> Απολαύστε το εδώ το πλήρες φωτογραφικό υλικό
+        </a>
+    </div>
+
+</div>
+
+    <!-- Πάρτυ Νεολαίας 2026 -->
+<div class="archive-card archive-item photos">
+    
+    <div class="full-mini-gallery">
+        <a href="/wwwroot/images/party26/partyl_1_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_1_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_2_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_2_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_3_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_3_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_4_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_4_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_5_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_5_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_6_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_6_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_7_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_7_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_8_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_8_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_9_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_9_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_10_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_10_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_11_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_11_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_12_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_12_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_13_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_13_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_14_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_14_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+        <a href="/wwwroot/images/party26/partyl_15_26.webp" class="glightbox" data-gallery="gallery-1"><img src="/wwwroot/images/party26/partyt_15_26.webp" alt="Φωτογραφία 1" loading="lazy"></a>
+
+    </div>
+
+    <!-- Περιεχόμενο Κάρτας -->
+    <div class="archive-card-body">
+        <span class="badge-type photo-badge"><i class="bi bi-images"></i> Φωτογραφίες</span>
+        <h3 class="archive-card-title">Casino Party 2026</h3>
+        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 9 Αυγούστου 2026</p>
+        <p class="archive-card-text">Για 3η συνεχόμενη χρονιά πραγματοποιήθηκε στο Λυχνό το καθιερωμένο πλέον γλέντι του Συλλόγου μας .
+            Ευχαριστούμε θερμά όλους όσου μας τίμησαν με την παρουσία τους σε αυτή την όμορφη παραδοσιακή βραδιά στην πλατεία του χωρίου μας.
+            Τα χορευτικά του Συλλόγου μας καλωσόρισαν τους παρευρισκομένους και στην συνέχεια το γλέντι συνεχίστηκε με ζωντανή παταδοσιακή μουσική μέχρι 
+            πρωίας.
+        </p>
+        
+        <!-- Κουμπί για το πλήρες Άλμπουμ στο Google Drive -->
+        <a href="https://drive.google.com/drive/folders/1On_3hL8CuDUDj6VugbJ_0HNgqpHp9ZXy?fbclid=PAcGRvZgRleHRuA2FlbQMxMDAAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnS1A7CzKmMDRiSmoMc-vsjtrZiKazj-ym4UmTr7vkltDK1yvimSYS8YMOopo_aem__qcDIag2uMwLSlsZInaatQ?usp=sharing" 
+           target="_blank" 
+           rel="noopener" 
+           class="drive-gallery-btn">
+            <i class="bi bi-google"></i> Απολαύστε το εδώ το πλήρες φωτογραφικό υλικό
+        </a>
+    </div>
+
+</div>
+            
+                <div class="archive-card archive-item videos">
+                          <!-- Σπερχειάδα Μέρος 2ο -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/E-967ZHSu4c" title="Βίντεο Εκδήλωσης" allowfullscreen></iframe>
+                    </div>
+                    <div class="archive-card-body">
+                        <span class="badge-type video-badge"><i class="bi bi-camera-video"></i> Βίντεο</span>
+                        <h3 class="archive-card-title">Συμμετοχή στο 20ο Φεστιβάλ Παραδοσιακών Χορών "Αθανάσιος Ακρίδας" (2ο  Μέρος)</h3>
+                        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 9 Αυγούστου 2029</p>
+                        <p class="archive-card-text">Η χορευτική ομάδα του Συλλόγου μας παρουσίασε χορούς τους Ρούμελης στο 
+                            20ο Φεστιβάλ Παραδοσιακών Χορών "Αθανάσιος Ακρίδας" , ύστερα απο πρόσκληση του Λαογραφικού Χορευτικού Ομίλου Σπερχειάδας
+                            Ευχαριστούμε θερμά τον Σύλλογο για την πρόσκληση και την φιλοξενία καθώς και όλους τους χορευτές μας για την συμμετοχή τους.</p>
+                    </div>
+                </div>
+
+                     <!-- Σπερχειάδα Μέρος 1ο -->
+                <div class="archive-card archive-item videos">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/j0jz578Ry6s" title="Βίντεο Εκδήλωσης" allowfullscreen></iframe>
+                    </div>
+                    <div class="archive-card-body">
+                        <span class="badge-type video-badge"><i class="bi bi-camera-video"></i> Βίντεο</span>
+                        <h3 class="archive-card-title">Συμμετοχή στο 20ο Φεστιβάλ Παραδοσιακών Χορών "Αθανάσιος Ακρίδας" (1ο Μέρος)</h3>
+                        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 9 Αυγούστου 2029</p>
+                        <p class="archive-card-text">Η χορευτική ομάδα του Συλλόγου μας παρουσίασε χορούς τους Ρούμελης στο 
+                            20ο Φεστιβάλ Παραδοσιακών Χορών "Αθανάσιος Ακρίδας" , ύστερα απο πρόσκληση του Λαογραφικού Χορευτικού Ομίλου Σπερχειάδας.
+                            Ευχαριστούμε θερμά τον Σύλλογο για την πρόσκληση και την φιλοξενία καθώς και όλους τους χορευτές μας για την συμμετοχή τους.</p>
+                    </div>
+
+                </div>
+
+                                     <!-- Γλέντι 2024 -->
+                <div class="archive-card archive-item videos">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://drive.google.com/file/d/1ux2Liy0sSkYWJ0X1f9uCx5xnBTwkCRK0/preview" 
+                            allow="autoplay" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="archive-card-body">
+                        <span class="badge-type video-badge"><i class="bi bi-camera-video"></i> Βίντεο</span>
+                        <h3 class="archive-card-title">1o Παραδοσιακό Γλέντι στο Λυχνό</h3>
+                        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 16 Αυγούστου 2024</p>
+                        <p class="archive-card-text">Με μεγάλη επιτυχία πραγματοποιήθηκε στην πλατεία του χωριού μας το >1o Παραδοσιακό Γλέντι,
+                             με ζωηντανή μουσική, Πλήθος κόσμου μας τίμησε με την παρουσία του σε μια όμορφη παραδοσιακή βραδιά που πραγαμτοποίθηθκε στο ΄
+                             στο Λυχνό. Ο Σύλλογός μας θα ήθελε να ευχαριστήσει όλους όσους με την βοήθειά τους ενίσχυσαν το έργο μας και φέτος. 
+                             Από την χορευτική ομάδα μέχρι τους ανθρώπους που έμπρακτα βοήθησαν την ημέρα της εκδήλωσης, το ευχαριστώ μας είναι λίγο...
+                            Το παραπάνω βίντεο είναι αφιερωμένο σε όλους εσάς!</p>
+                    </div>
+                </div>
+
+                 <!-- Συνέντευξη 2024 -->
+                <div class="archive-card archive-item videos">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/95wMTV716Ss" title="Βίντεο Συνέντευξης" allowfullscreen></iframe>
+                    </div>
+                    <div class="archive-card-body">
+                        <span class="badge-type video-badge"><i class="bi bi-camera-video"></i> Βίντεο</span>
+                        <h3 class="archive-card-title">Συνέντευξη για τις καλοκαιρινές δράσεις του Συλλόγου μας</h3>
+                        <p class="archive-card-date"><i class="bi bi-calendar3"></i> 10 Αυγούστου 2024</p>
+                        <p class="archive-card-text">Στο studio του Lamia Polis 87,7 και της εκπομπής "Lamia Plus" φιλοξενήθηκαν μέλη του Δ.Σ
+                         και εξήγησαν με κάθε λεπτομέρεια όλες τις δράσεις του καλοκαιριού. Οι δραστηριότητες πολλές και καθημερινές. Έναν ολόκληρο 
+                         χρόνο οι νέοι του Λυχνού ετοιμάζουν ένα πλούσιο πρόγραμμα για τους νέους και όχι μόνο του χωριού που κάθε καλοκαίρι 
+                         συναντιούνται ξανά στο Λυχνό για να διασκεδάσουν να χαλαρώσουν και να περάσουν όμορφες μέρες και νύχτες δίπλα στον πλάτανο, 
+                         στην πλατεία, αλλά και σε ειδικά διαμορφωμένους χώρους που τους περιμένουν παιχνίδια και διάφορες δραστηριότητες</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ==========================================
+         SITE FOOTER (Ακριβώς το κοινό σου Footer)
+         ========================================== -->
+  <footer class="site-footer">
+		<div class="container">
+			<div class="row gy-4">
+
+				<!-- Στήλη 1: Πληροφορίες Συλλόγου -->
+				<div class="col-lg-5 col-md-6 col-12">
+					<h5 class="footer-title mb-3">Π.Π.Σ. Νεολαίας Λυχνού</h5>
+					<p class="footer-text">
+						Πολιτισμικός και Πνευματικός Σύλλογος Νεολαίας Λυχνού Φθιώτιδας. 
+						Διατηρούμε την παράδοση, την ιστορία και την πολιτιστική κληρονομιά του τόπου μας.
+					</p>
+				</div>
+
+				<!-- Στήλη 2: Γρήγοροι Σύνδεσμοι -->
+				<div class="col-lg-3 col-md-6 col-12 ms-auto">
+					<h5 class="footer-title mb-3">Πλοήγηση</h5>
+					<ul class="footer-links list-unstyled">
+						<li><a href="/wwwroot/index.html#section_1">Αρχική</a></li>
+						<li><a href="/wwwroot/index.html#section_2">Σχετικά με εμάς</a></li>
+						<li><a href="/wwwroot/index.html#section_3">Το χωριό μας</a></li>
+						<li><a href="/wwwroot/index.html#section_4">Εκδηλώσεις - Δράσεις</a></li>
+					</ul>
+				</div>
+
+				<!-- Στήλη 3: Επικοινωνία & Social -->
+				<div class="col-lg-3 col-md-6 col-12">
+					<h5 class="footer-title mb-3">Επικοινωνία</h5>
+					<p class="footer-text mb-2">
+						<i class="bi bi-geo-alt-fill me-2"></i>Λυχνό Φθιώτιδας, 35016
+					</p>
+					<p class="footer-text mb-3">
+						<i class="bi bi-envelope-fill me-2"></i>
+						<a href="mailto:syllogos.tolyxnari@yahoo.com" class="footer-email">syllogos.tolyxnari@yahoo.com</a>
+					</p>
+
+					<!-- Social Media Icons -->
+					<div class="footer-social d-flex gap-3">
+						<a href="https://facebook.com/groups/146857978735724/" target="_blank" rel="noopener" aria-label="Facebook">
+							<i class="bi bi-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/to_lyxno" target="_blank" rel="noopener" aria-label="Instagram">
+							<i class="bi bi-instagram"></i>
+						</a>
+						<a href="mailto:syllogos.tolyxnari@yahoo.com" aria-label="Email">
+							<i class="bi bi-envelope-fill"></i>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Copyrights Τέρμα Κάτω -->
+			<div class="row align-items-center">
+				<div class="col-12 text-center">
+					<p class="copyright-text mb-0">
+						Copyright © 2026 Π.Π.Σ. Νεολαίας Λυχνού Φθιώτιδας. Με την επιφύλαξη παντός νόμιμου δικαιώματος.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>   
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="/wwwroot/Js/Arxeio.js" ></script>
+
+</body>
+</html>
