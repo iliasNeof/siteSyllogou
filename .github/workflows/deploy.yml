@@ -12,8 +12,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -33,7 +33,8 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './wwwroot'
+          name: github-pages
+          path: ./wwwroot
 
       - name: Deploy to GitHub Pages
         id: deployment
