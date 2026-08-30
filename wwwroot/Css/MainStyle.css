@@ -1289,26 +1289,29 @@ b, strong {
     }
 }
 
-
-body {
-    background-color: #3d405b !important; 
+@media screen and (max-width: 991px) {
+  .sticky-wrapper {
+    position: relative;
+    height: auto !important;   /* το jquery.sticky κλειδώνει ύψος στο load */
+  }
+  .hero-section {
+    top: 0;
+    margin-bottom: 0;
+  }
+  
 }
 
 
+
 @media (max-width: 991px) {
-    #sticky-wrapper,
-    .sticky-wrapper {
-        height: auto !important;
-        background-color:  #3d405b !important; /* Το σκούρο χρώμα του navbar */
-    }
+  .navbar .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transition: none;
+  }
 
-
-    .navbar-brand-text {
-        max-width: 180px;
-    }
-
-    .navbar-brand-text small {
-        font-size: 7.5px !important;
-        line-height: 1.1 !important;
-    }
+  /* το λευκό βελάκι είναι για το desktop dropdown */
+  .navbar .dropdown-menu::before {
+    display: none;
+  }
 }
