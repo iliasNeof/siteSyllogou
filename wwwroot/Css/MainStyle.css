@@ -1274,14 +1274,7 @@ b, strong {
 
 /* Διόρθωση Dropdown για να ανοιγοκλείνει σωστά στα κινητά */
 @media (max-width: 991px) {
-    /* Κρύβουμε το μενού αρχικά */
-    .navbar-nav .dropdown-menu {
-        display: none !important;
-        background-color: rgba(255, 255, 255, 0.05); /* Ελαφρύ φόντο */
-        border: none;
-        margin-top: 5px;
-        padding-left: 15px;
-    }
+
 
     /* Εμφανίζεται ΜΟΝΟ όταν ο χρήστης κάνει κλικ στο "Εκδηλώσεις - Δράσεις" */
     .navbar-nav .dropdown-menu.show {
@@ -1303,15 +1296,3 @@ b, strong {
 
 
 
-@media (max-width: 991px) {
-  .navbar .dropdown-menu {
-    opacity: 1;
-    pointer-events: auto;
-    transition: none;
-  }
-
-  /* το λευκό βελάκι είναι για το desktop dropdown */
-  .navbar .dropdown-menu::before {
-    display: none;
-  }
-}

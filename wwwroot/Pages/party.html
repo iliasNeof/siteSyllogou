@@ -32,86 +32,97 @@
 
     
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                    <img src="../images/emvlima_new.webp" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
-                    <span class="navbar-brand-text">
-                        <small>ΠΟΛΙΤΙΣΜΙΚΟΣ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ </small>
-                        <small>ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΑΣ</small>
-                    </span>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+        <!-- Logo + τίτλος -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/emvlima_new.webp"
+                 class="navbar-brand-image img-fluid"
+                 alt="Σύλλογος Νεολαίας Λυχνού">
+
+            <span class="navbar-brand-text">
+                <small>ΠΟΛΙΤΙΣΜΙΚΟΣ ΚΑΙ ΠΝΕΥΜΑΤΙΚΟΣ ΣΥΛΛΟΓΟΣ</small>
+                <small>ΝΕΟΛΑΙΑΣ ΛΥΧΝΟΥ ΦΘΙΩΤΙΔΑΣ</small>
+            </span>
+        </a>
+
+
+        <!-- Hamburger button - εμφανίζεται μόνο σε κινητά/tablet -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Άνοιγμα μενού">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="index.html">
+                        Αρχική
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#section_2">
+                        Σχετικά με εμάς
+                    </a>
+                </li>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Το χωρίο μας</a>
+                        </li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" 
+							href="#" 
+							id="navbarDropdown" 
+							role="button" 
+							data-bs-toggle="dropdown" 
+							aria-expanded="false">
+								Εκδηλώσεις - Δράσεις
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#section_4.1">Προσεχείς εκδηλώσεις</a></li>
+								<li><a class="dropdown-item" href="Pages/arxeio.html">Αρχείο Εκδηλώσεων</a></li>
+							</ul>
+						</li>
+            <div class="d-flex align-items-center justify-content-start justify-content-lg-end gap-3 mt-3 mt-lg-0 ms-lg-3">
+                
+                <a href="https://facebook.com/groups/146857978735724/" target="_blank" rel="noopener noreferrer" class="text-white fs-5" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
                 </a>
 
-                <div class="d-lg-none ms-auto me-3">
-                    <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                        role="button" aria-controls="offcanvasExample"></a>
-                </div>
+                <a href="https://www.instagram.com/to_lyxno?igsi=emdoNjBleWFyMGQ5" target="_blank" rel="noopener noreferrer" class="text-white fs-5" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a href="mailto:syllogos.tolyxnari@yahoo.com" class="text-white fs-5" aria-label="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="../index.html#section_1">Αρχική</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="../index.html#section_2">Σχετικά με εμάς</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="../index.html#section_3">Το χωρίο μας</a>
-                        </li>
-
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="eventsDropdown">
-									Εκδηλώσεις - Δράσεις
-								</a>
-
-								<ul class="dropdown-menu" aria-labelledby="eventsDropdown">
-									<li>
-										<a class="dropdown-item click-scroll" href="../index.html#section_4.1">
-											Προσεχείς Εκδηλώσεις
-										</a>
-									</li>
-
-									<li>
-										<a class="dropdown-item click-scroll" href="../index.html#section_4.2">
-											Αρχείο Εκδηλώσεων
-										</a>
-									</li>
-								</ul>
-							</li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://facebook.com/groups/146857978735724/" target="_blank"
-                                rel="noopener noreferrer" aria-label="Facebook">
-                                <i class="bi bi-facebook"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/to_lyxno?igsi=emdoNjBleWFyMGQ5 "
-                                target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:syllogos.tolyxnari@yahoo.com" aria-label="Email">
-                                <i class="bi bi-envelope-fill"></i>
-                            </a>
-                        </li>
-
-                    </ul>
-
-
-                </div>
+					<!-- Κουμπί Ενίσχυσης -->
+					<a class="btn custom-btn custom-border-btn nav-support-btn ms-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+						Ενίσχυση Συλλόγου
+					</a>
             </div>
-        </nav>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
 
 <main class="main-content">
     <div class="container">
@@ -181,7 +192,7 @@
 						<li><a href="../index.html#section_1">Αρχική</a></li>
 						<li><a href="../index.html#section_2">Σχετικά με εμάς</a></li>
 						<li><a href="../index.html#section_3">Το χωριό μας</a></li>
-						<li><a href="../index.html#section_4">Εκδηλώσεις - Δράσεις</a></li>
+						<li><a href="../index.html#section_4.1">Εκδηλώσεις - Δράσεις</a></li>
 					</ul>
 				</div>
 
