@@ -580,15 +580,28 @@ a, button {
 }
 
 @media (max-width: 991px) {
+
   .navbar .dropdown-menu {
     display: none !important;
     opacity: 1;
     pointer-events: auto;
     transition: none;
-    background-color: rgba(255, 255, 255, 0.05);
+
+    /* χωρίς φόντο */
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
     border: none;
-    margin-top: 5px;
-    padding-left: 15px;
+
+    /* ακριβής στοίχιση με τον γονέα */
+    position: relative;
+    left: 0;
+    margin-left: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    margin-top: 2px;
+    margin-bottom: 8px;
   }
 
   .navbar .dropdown-menu.show {
@@ -597,5 +610,16 @@ a, button {
 
   .navbar .dropdown-menu::before {
     display: none;
+  }
+
+  .navbar .dropdown-item,
+  .navbar .dropdown-item:hover,
+  .navbar .dropdown-item:focus,
+  .navbar .dropdown-item:active,
+  .navbar .dropdown-item.active {
+    display: block;
+    color: var(--white-color);
+    background: transparent;
+    padding: 10px 0;
   }
 }

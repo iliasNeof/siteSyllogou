@@ -1295,15 +1295,28 @@ b, strong {
 }
 
 @media (max-width: 991px) {
+
   .navbar .dropdown-menu {
     display: none !important;
     opacity: 1;
     pointer-events: auto;
     transition: none;
-    background-color: rgba(255, 255, 255, 0.05);
+
+    /* χωρίς φόντο */
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
     border: none;
-    margin-top: 5px;
-    padding-left: 15px;
+
+    /* ακριβής στοίχιση με τον γονέα */
+    position: relative;
+    left: 0;
+    margin-left: 5px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    margin-top: 2px;
+    margin-bottom: 8px;
   }
 
   .navbar .dropdown-menu.show {
@@ -1313,6 +1326,35 @@ b, strong {
   .navbar .dropdown-menu::before {
     display: none;
   }
+
+  .navbar .dropdown-item,
+  .navbar .dropdown-item:hover,
+  .navbar .dropdown-item:focus,
+  .navbar .dropdown-item:active,
+  .navbar .dropdown-item.active {
+    display: block;
+    color: var(--white-color);
+    background: transparent;
+    padding: 10px 0;
+  }
 }
 
+/* 1. Ρύθμιση για μεγάλες οθόνες (Υπολογιστές / Tablets) */
+section, 
+[id^="section_"] {
+    scroll-margin-top: 80px;
+}
+
+/* 2. Ρύθμιση για κινητά (όπου το Navbar ψηλώνει) */
+@media (max-width: 991px) {
+    section, 
+    [id^="section_"] {
+        scroll-margin-top: 120px !important; /* Αυξάνουμε τον αέρα για να χωράει το ψηλότερο navbar */
+    }
+}
+
+/* 3. Ομαλό scrolling σε όλο το site */
+html {
+    scroll-behavior: smooth;
+}
 
