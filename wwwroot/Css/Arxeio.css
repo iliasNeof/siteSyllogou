@@ -274,6 +274,7 @@
     .navbar .dropdown-item {
         font-size: 14px;
         padding: 9px 12px;
+          color: #ffffff;
     }
 
     .offcanvas.offcanvas-end {
@@ -302,4 +303,25 @@
     margin-bottom: 0;
   }
   
+}
+
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    display: none !important;
+    opacity: 1;
+    pointer-events: auto;
+    transition: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    margin-top: 5px;
+    padding-left: 15px;
+  }
+
+  .navbar .dropdown-menu.show {
+    display: block !important;
+  }
+
+  .navbar .dropdown-menu::before {
+    display: none;
+  }
 }

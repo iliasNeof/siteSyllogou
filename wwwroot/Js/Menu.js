@@ -19,19 +19,26 @@ function copyToClipboard(elementId, button) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var toggle = document.getElementById('navbarDropdown');
-  if (!toggle) return;
+  var toggle   = document.getElementById('navbarDropdown');
+  var collapse = document.getElementById('navbarNav');
+  if (!toggle || !collapse) return;
 
   var menu = toggle.parentElement.querySelector('.dropdown-menu');
 
+  // Ξεκολλάει τον handler του template ΜΟΝΟ από αυτό το link
+  if (window.jQuery) jQuery(toggle).off('click');
+
   toggle.addEventListener('click', function (e) {
-    if (window.innerWidth >= 992) return;   // desktop = hover, μην ανακατεύεσαι
     e.preventDefault();
+    if (window.innerWidth >= 992) return;   // desktop = hover
     e.stopPropagation();
     var open = menu.classList.toggle('show');
     toggle.setAttribute('aria-expanded', open);
   });
+
+  // Καθαρισμός όταν κλείνει το burger menu
+  collapse.addEventListener('hidden.bs.collapse', function () {
+    menu.classList.remove('show');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
 });
-
-
-

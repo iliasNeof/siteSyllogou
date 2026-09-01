@@ -975,9 +975,9 @@ b, strong {
     left: 10px;
     opacity: 1;
     pointer-events: auto;
-    max-width: 155px;
+    max-width: 170px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .navbar-expand-lg .navbar-nav {
