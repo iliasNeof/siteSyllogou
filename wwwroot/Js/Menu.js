@@ -18,18 +18,20 @@ function copyToClipboard(elementId, button) {
     });
 }
 
-document.querySelectorAll('.navbar-nav .dropdown-toggle').forEach(function (el) {
-  el.addEventListener('click', function (e) {
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle = document.getElementById('navbarDropdown');
+  if (!toggle) return;
+
+  var menu = toggle.parentElement.querySelector('.dropdown-menu');
+
+  toggle.addEventListener('click', function (e) {
+    if (window.innerWidth >= 992) return;   // desktop = hover, μην ανακατεύεσαι
     e.preventDefault();
     e.stopPropagation();
-
-    if (window.innerWidth < 992) {
-      e.stopImmediatePropagation();      // μπλοκάρει τον handler του template
-      var menu = el.nextElementSibling;
-      var open = menu.classList.toggle('show');
-      el.setAttribute('aria-expanded', open);
-    }
-  }, true);
+    var open = menu.classList.toggle('show');
+    toggle.setAttribute('aria-expanded', open);
+  });
 });
+
 
 
